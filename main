@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int x, y, giris;
+        System.out.print("1. Sayıyı giriniz\t: ");
+        x = scanner.nextInt();
+        System.out.println("2. Sayıyı giriniz\t: ");
+        y = scanner.nextInt();
+        System.out.println("Toplama için 1'i seçiniz");
+        System.out.println("Çıkarma için 2'yi seçiniz");
+        System.out.println("Çarpma için 3'ü seçiniz");
+        System.out.println("Bölme için 4'i seçiniz");
+        giris=scanner.nextInt();
+        switch (giris){
+            case 1:
+                System.out.println("İki sayının toplamı\t: "+(x+y));
+                break;
+            case 2:
+                System.out.println("İki sayının farkı\t: "+(x-y));
+                break;
+            case 3:
+                System.out.println("İki sayının çarpımı\t: "+(x*y));
+                break;
+            case 4:
+                System.out.println("İki sayının bölümü\t: "+(x/y));
+                break;
+            default:
+                System.out.println("Girdiğiniz sayı geçersidir. Lütfen:");
+                System.out.println("Toplama için 1'i seçiniz:");
+                System.out.println("Çıkarma için 2'yi seçiniz:");
+                System.out.println("Çarpma için 3'ü seçiniz:");
+                System.out.println("Bölme için 4'i seçiniz:");
+                break;
+        }
+    }
+}
